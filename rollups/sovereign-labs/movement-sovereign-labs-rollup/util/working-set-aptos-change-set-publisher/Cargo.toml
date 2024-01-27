@@ -1,6 +1,6 @@
 [package]
 name = "working-set-move-resolver"
-description = "A Move resolver implemeted for the sovereign labs working set"
+description = "A Move resolver implemented for the sovereign labs working set"
 authors = { workspace = true }
 edition = { workspace = true }
 homepage = { workspace = true }
