@@ -244,7 +244,7 @@ fn aptosvm_test() -> Result<(), Error>{
         )))
     );*/
 
-    // use transcation factory to create entrypoint call
+    // use transaction factory to create entrypoint call
     let block_vec : Vec<Transaction> = vec![
         Transaction::UserTransaction(create1_tx),
         Transaction::UserTransaction(create2_tx),
