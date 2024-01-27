@@ -52,7 +52,7 @@ impl<'a, C: sov_modules_api::Context> ChangeSetPublisher<'a, C> {
 
       // resources
       for (path, op) in resources.iter() {
-        let ap = AccessPath::resource_access_path(*account_address, path.clone().to_owned())?; // struct tag is actually somwhat large so avoiding clone may be useful
+        let ap = AccessPath::resource_access_path(*account_address, path.clone().to_owned())?; // struct tag is actually somewhat large so avoiding clone may be useful
         match op {
           Op::New(data) => {
             self.remote_cache.set(&AccessPathWrapper::new(ap), data, &mut working_set);
